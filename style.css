@@ -3,72 +3,94 @@
     padding: 0;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+
 main {
-    display: flex;
-   
+    display: flex; 
 }
+
 .principal{
     display: flex;
     width: 100%;
     text-align: center;
-    background-color: azure;
+    background-color: rgb(246, 236, 246);
     min-height: 100vh;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
 .principal img{
     width: 250px;
 }
+
 .contactos{
     display: flex;
     flex-direction: column;
     flex-basis: 30%;
     border-right: solid 1px;
+    border-color: #bec1bb;
 }
+
 .contactos .contacto:hover{
+    background-color: rgb(225, 201, 242);
+}
+
+.contactos .contacto{
     display: flex;
     min-height: 70px;
-    border: solid 1px ;
-    border-color: black;
-    padding: 15px;
-    background-color: blueviolet;
-    cursor: pointer;
+    padding: 15px; 
+    border-bottom: solid 1px;
+    border-color: #bec1bb;
 }
+
+.contactos .name {
+    display: flex;
+    padding-right: 2px;   
+}
+
 .contactos .contacto img{
     width: 60px;
     border-radius: 30px;
 }
+
 .contactos .contacto .info{
     text-align: left;
     padding: 10px;
     width: 300px;
-   
 }
 
-.nuevo-chat {
+.nuevo-chat{
     display:flex;
     justify-content: center;
     align-items:center;
     flex-direction: column;
-    min-height: 10vh;
-    border-color: black;
-    border-top: solid 10px;
+    min-height: 12vh;
+    padding: 6px;
+    border-bottom: solid 1px;
+    border-color: #bec1bb;
 }
 
-.nuevo-chat .button {
-    padding: 10px;
-    background-color: blueviolet;
+.nuevo-chat button {
+    padding: 13px;
+    background-color: rgb(180, 146, 204);
     color: white;
-    border-radius: 10px ;
-    
+    border: none;  
 }
+
+.nuevo-chat button:hover{
+    background-color: rgb(225, 201, 242);
+}
+
+
 .contactos nav{
     display: flex;
     justify-content: space-between;
     padding: 15px;
-
+    border-top: solid 1px;
+    border-bottom: solid 1px;
+    border-color: #bec1bb;
 }
+
 .contactos nav img{
     width: 60px;
     border-radius: 30px;
@@ -78,7 +100,16 @@ main {
     display: flex;
     font-size: 12px;
     align-items: center;
+    flex-direction: column;
+    padding-top: 10px;  
 }
+
+.contactos .perfil p{
+    padding: 1px;
+    padding-left: 15px;
+    font-size: medium; 
+}
+
 
 .contactos .perfil .info{
    padding: 10px;
@@ -92,3 +123,4 @@ main {
 .contactos nav .items i{
     padding: 5px;
 }
+
